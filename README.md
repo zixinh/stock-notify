@@ -1,5 +1,7 @@
 # stock-notify
 
+## UNDER DEVELOPMENT
+
 ## Purpose
 Automatically notify user if current stock price is within certain conditions e.x. exceed certain price.
 - support Hotmail and Chinese stock only
