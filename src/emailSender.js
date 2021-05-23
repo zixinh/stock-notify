@@ -28,9 +28,9 @@ module.exports = class emailSender{
           
         transporter.sendMail(mailOptions, function(error, info){
             if (error) {
-              console.log(error);
+              console.log('邮件发送失败：' + error);
             } else {
-              console.log('Email sent: ' + info.response);
+              console.log('邮件发送成功：' + info.response);
             }
           });
     }
