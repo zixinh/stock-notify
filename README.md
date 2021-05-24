@@ -13,3 +13,6 @@ Automatically notify user if current stock price is within certain conditions e.
 EMAILNAME = 
 EMAILPASSWORD = 
 ```
+
+## RUN
+@ root folder `npm run server` 
