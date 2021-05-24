@@ -16,3 +16,5 @@ EMAILPASSWORD =
 
 ## RUN
 @ root folder `npm run server` 
+sample console results:
+![sampleConsoleResults](./sampleResult.png)
