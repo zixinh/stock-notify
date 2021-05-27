@@ -3,6 +3,8 @@ var prompt = require('prompt-sync')();
 module.exports = class promptControl {
     constructor(){
         this.stockDB = [];
+        // 长期股票观测的股票可直接在这里加入 -- 不用每次程序启东时新加每一只股票 
+        // this.stockDB = [['sz000001', 23, 0], [...], ....];
     }
 
     askStocks(){
