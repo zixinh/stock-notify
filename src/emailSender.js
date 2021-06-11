@@ -6,11 +6,18 @@ module.exports = class emailSender{
     constructor(){
         this.email = process.env.EMAILNAME;
         this.password = process.env.EMAILPASSWORD;
+        console.log(this.email);
     }
 
-    sendEmail(messenge){
-        const emailContent = '股票测试提醒 -- 股票：' + messenge[0] + '现在价格：' + messenge[1];
+    sendEmail(stockName, curPrice, highPrice, lowPrice){
+        let emailContent = '股票提醒 -- 股票：' + stockName + '实时价格：' + curPrice;
 
+        if (curPrice > highPrice) {
+          emailContent += ` 超过上行目标价: ${String(highPrice)}`
+        } else if (curPrice < lowPrice) {
+          emailContent += ` 低于下行目标价: ${String(lowPrice)}`
+        }
+        
         var transporter = nodemailer.createTransport({
             service: 'hotmail',
             auth: {
