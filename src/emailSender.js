@@ -6,7 +6,6 @@ module.exports = class emailSender{
     constructor(){
         this.email = process.env.EMAILNAME;
         this.password = process.env.EMAILPASSWORD;
-        console.log(this.email);
     }
 
     sendEmail(stockName, curPrice, highPrice, lowPrice){
