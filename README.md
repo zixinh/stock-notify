@@ -1,7 +1,7 @@
 # stock-notify
 
 ## Purpose
-Automatically notify user if current stock price is within certain conditions e.x. exceed certain price.
+Automatically notify user if current stock price meets customizable conditions e.x. 15-day MA and 60-day MA converge
 - support Hotmail and Chinese stock only
 
 ## Set up
